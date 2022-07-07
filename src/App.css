@@ -1,38 +1,61 @@
 .App {
-  text-align: center;
+  font-family: sans-serif;
+  text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, .root{
+  background-color: lightgrey;
+  margin: 0;
+  padding: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bootsSection{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
+}
+.Sport{
+  
+  background-color: lightgrey;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.App-link {
-  color: #61dafb;
+.cart{
+  background-color: grey;
+  width: 25rem;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 2;
+}
+.innerCart{
+  display: flex;
+  justify-content: space-between;
+}
+.grid{
+  display: grid;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gridItem{
+  height: 40rem;
+}
+.gridItem button{
+  position: relative;
+  width: 8rem;
+  height: 3rem;
+  top: 15%;
+  left: 75%
+}
+
+.cat{
+  background-color: grey;
+  width: 10rem;
+  height: 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
 }
